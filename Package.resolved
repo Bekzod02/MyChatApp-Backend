@@ -1,6 +1,15 @@
 {
-  "originHash" : "cb3c326005027034ce741e79e12bfdb0143cec79d69d332eefc5e7a826a7b1ba",
+  "originHash" : "6abfbe10979dc0d35e75617ad20a2d3093025070164d3e2ca4ebd3797164afbc",
   "pins" : [
+    {
+      "identity" : "bcrypt",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/chaqmoq/bcrypt.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "c1c8319f80f78775c4ba422e5c83d81cd8b23852"
+      }
+    },
     {
       "identity" : "chaqmoq",
       "kind" : "remoteSourceControl",
@@ -87,8 +96,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/apple/swift-crypto.git",
       "state" : {
-        "revision" : "47d3869a7291f085c1fb9fb1e6d3b97a793f45c6",
-        "version" : "4.5.1"
+        "revision" : "95ba0316a9b733e92bb6b071255ff46263bbe7dc",
+        "version" : "3.15.1"
       }
     },
     {

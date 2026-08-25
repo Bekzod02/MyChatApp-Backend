@@ -4,7 +4,11 @@ import Chaqmoq
 struct MyChatAppBackend {
     static func main() throws {
         let app = Chaqmoq()
-        app.get { _ in "Hello, World! \n" }
+        let services = buildServices(environment: app.environment)
+        registerRoutes(for: app, services: services)
+
+        app.get { _ in "MyChatAppBackend is running.\n" }
+
         try app.run()
     }
 }
