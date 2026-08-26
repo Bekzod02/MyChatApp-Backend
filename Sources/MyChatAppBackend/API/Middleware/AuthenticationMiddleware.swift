@@ -1,11 +1,5 @@
 import Chaqmoq
 
-/// Guards a route group behind a valid access token. Reads the bearer token off the request,
-/// asks `AuthService` to verify it and resolve the `User` it belongs to, and either lets the
-/// request through (with `currentUser` now set) or short-circuits with `401 Unauthorized`.
-///
-/// A plain `struct` conforming to `Middleware` — no class, no shared mutable state — matching
-/// the same "constructor injection, nothing ambient" approach used everywhere else in `API/`.
 struct AuthenticationMiddleware: Middleware {
     private let authService: AuthService
 

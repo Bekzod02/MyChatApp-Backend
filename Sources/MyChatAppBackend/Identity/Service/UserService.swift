@@ -1,8 +1,5 @@
 import Foundation
 
-/// Business logic for the `User` entity: uniqueness checks, delegating construction to
-/// `UserFactory`, and persistence via `UserRepository`. Constructor-injected with only the one
-/// dependency it actually uses — no ambient container, nothing unused.
 public final class UserService: Sendable {
     private let repository: UserRepository
     private let factory = UserFactory()

@@ -1,8 +1,5 @@
 import Chaqmoq
 
-/// A function, not a type — route registration is a one-time, imperative act (call these methods
-/// on this group, in this order), not something that benefits from being modeled as an object
-/// with its own state or lifecycle.
 func identityRoutes(
     group: RouteGroup,
     authController: AuthController,

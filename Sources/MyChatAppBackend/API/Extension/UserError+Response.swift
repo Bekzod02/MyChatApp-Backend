@@ -1,11 +1,5 @@
 import Chaqmoq
 
-/// Translates an Identity-context error into an HTTP status code and a wire-format error body.
-/// This mapping is deliberately kept in `API/`, not in `Identity/`: `UserError` describes what
-/// went wrong in domain terms (a username was already taken), and has no business knowing that
-/// HTTP exists, let alone which status code a REST convention assigns to it. If MyChatApp grew a
-/// second transport (a CLI, a gRPC API) tomorrow, this file — not `UserError` — is the only thing
-/// that would need a counterpart.
 extension UserError {
     var httpStatus: Response.Status {
         switch self {

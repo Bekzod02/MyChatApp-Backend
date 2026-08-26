@@ -1,8 +1,5 @@
 import Chaqmoq
 
-/// Bridges chaqmoq's transport-level `Request` to Identity concepts: pulling a bearer token out
-/// of the `Authorization` header, and stashing the `User` that `AuthenticationMiddleware` resolves
-/// from it so downstream handlers (like `AuthController.me`) can read it back.
 extension Request {
     private static let currentUserAttributeKey = "currentUser"
 
